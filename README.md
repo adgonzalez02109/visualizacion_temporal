@@ -1,5 +1,5 @@
-# visualizacion_temporal
-¿Los delicuentes si estan siendo capturados?
+# ¿Los delicuentes si estan siendo capturados?
+
 
 Overview de como se ha comportado el numero de capturas en los ultimos 18 años.
 En la siguiente visualización puedes ver el numero de capturas por día de 2000 a 2018, información extraida de https://www.datos.gov.co/Justicia-y-Derecho/Evoluci-n-reincidencia/53ri-ucd8 del dataset de Evolución reincidencia. Cada punto representa el numero de capturas diarias, si te paras son un punto mostrará el día y el numero de capturas en la parte superior y con los filtros por rangos de edades se puede filtrar la información (se pueden seleccionar varios a la vez).
@@ -35,4 +35,4 @@ A la visualización se le puede hacer un filter por rango de edad.
   
   Este proyecto se publica bajo la licencia de MIT.
   
-  ![alt text](https://i.imgur.com/pghvTzb.png)
+  ![alt text](https://i.imgur.com/HcvkHlT.png)
