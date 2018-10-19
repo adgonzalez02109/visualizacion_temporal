@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<!--
+	Visualize by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+<head>
+	<title>Visualize by TEMPLATED</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="test.js"></script>
+
+</head>
+<body>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1>¿Los delicuentes si estan siendo capturados?</h1>
+			Overview de como se ha comportado el numero de capturas en los ultimos 18 años.
+		</header>
+
+		<!-- Main -->
+		<section id="main">
+
+			<!-- Thumbnails -->
+			<section class="thumbnails">
+				<div id ="first" style="width:100%;">
+
+					<h3 id="texto">--</h3>
+					<ul class="icons">
+						<li value="0" onclick="update(2)" id="sel2">19 a 30 años</li>
+						<li value="0" onclick="update(3)" id="sel3">31 a 40 años</li>
+						<li value="0" onclick="update(4)" id="sel4">41 a 50 años</li>
+						<li value="0" onclick="update(5)" id="sel5">51 a 60 años</li>
+						<li value="0" onclick="update(6)" id="sel6">Mas de 61 años</li>
+						<li value="0" onclick="update(7)" id="sel7">Todos</li>
+					</ul>
+
+				</div>
+							</section>
+
+			<section class="thumbnails">
+				<div>
+					<h3>WHAT</h3>
+					Se ultilizó una tabla de item de la cual se usaron los siguientes campos:<br>
+					EDAD (cuantitativo secuencial): Este campo tiene las edades de las personas capturadas e inicia en 19 años.<br>
+					RANGO EDAD: (categorico ordenado):Este campo es calculado y tiene los rangos de edad a las que pertenecen las personas capturadas<br>
+					FECHA_CAPTURA (time con año, mes y dia): Este campo tiene el día en que fue capturada la persona.<br>
+					NUMERO CAPTURADOS: (cuantitativo secuencial): Este campo es calculado y tiene el numero de capturados por día.<br>
+				</div>
+								<div>
+					<h3>WHY</h3>
+
+					EXPLORE TRENDS AND OUTLIERS: Pretende ver una tendencia y valores atipicos en el numero de capturas diarias durante los años  por edades o en cualquier ubicación en el tiempo.<br>
+					DISCOVER FEATURES: Permite ver en cada día cuantos arrestos hubo.<br>
+					BROWSE: Permite consultar el numero de capturador por rangos de edad. 
+
+
+				</div>
+								<div>
+					<h3>HOW</h3>
+					Por medio de la marca punto se usaron los canales de order and align para los ejes X y Y dado que ambos ejes son ordenados secuenciales y luminance para evidenciar outliers.
+					<br>
+					Al canal de puntos se aplicó un manipulate de change dado que con los filtros cambian las posiciones de los puntos con transición, select dado que se puede ubicar un punto y se muestra su valor, y navigate dado que se puede seleccionar uno o varios rangos de edad.
+					<br>
+					Para el canal de color se uso un superimpose en el que la transparencia de los puntos es igual en todos pero si los puntos se superponen debido a un conjunto similar de capturas en un rango de tiempo pequeño las transparencias se superponen creando un efecto de luminance negativa.
+					<br>
+					A la visualización se le puede hacer un filter por rango de edad.
+				</div>
+			</section>	
+
+
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p>&copy; Untitled. All rights reserved. Design: <a href="http://templated.co">TEMPLATED</a>. Demo Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.poptrox.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
